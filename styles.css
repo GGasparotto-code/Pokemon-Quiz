@@ -1,0 +1,118 @@
+body {
+    /* Define a imagem de fundo, centraliza e a dimensiona para cobrir toda a área */
+    background: url("./assets/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Gabarito", sans-serif; /* Define a fonte do texto */
+    margin: 1.25rem; /* Define a margem externa do body */
+}
+
+.logo {
+    text-align: end; /* Alinha o conteúdo à direita */
+}
+
+.logo img {
+    width: 10%; /* Define a largura da imagem do logo */
+}
+
+/* Caixa principal do jogo */
+.conteudo-jogo {
+    background: rgba(0, 0, 0, 0.7); /* Define a cor de fundo com transparência */
+    box-shadow: 0 0 5px #D8302D; /* Adiciona uma sombra à caixa */
+    margin: 1.875rem; /* Define a margem externa da caixa */
+    padding: 1.25rem; /* Define o preenchimento interno da caixa */
+    height: 50vh; /* Define a altura da caixa */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza o conteúdo da caixa */
+    margin-top: 2rem; /* Define a margem superior */
+}
+
+.conteudo-jogo:hover {
+    background: rgba(0, 0, 0); /* Define a cor de fundo ao passar o mouse */
+    box-shadow: 0 0 5px #6D85F1; /* Define a sombra ao passar o mouse */
+}
+
+/* Estrutura do questionário */
+.questionario {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-evenly; /* Distribui o espaço entre os elementos */
+    flex-direction: column; /* Define a direção dos elementos como coluna */
+    width: 70%; /* Define a largura do elemento */
+    max-width: 70%; /* Define a largura máxima do elemento */
+}
+
+/* Área de conteúdo */
+.conteudo {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    justify-content: space-evenly; /* Distribui o espaço entre os itens */
+    height: 100%; /* Define a altura como 100% do pai */
+    gap: 1.25rem; /* Define o espaçamento entre os itens */
+}
+
+/* Estilo da pergunta */
+.pergunta {
+    font-weight: 600; /* Define o peso da fonte como 600 (negrito) */
+    color: white; /* Cor do texto */
+}
+
+/* Progresso da pergunta */
+.progresso {
+    text-align: end; /* Alinha o texto à direita */
+    font-size: small; /* Define o tamanho da fonte como pequeno */
+    font-weight: 500; /* Define o peso da fonte como 500 (negrito) */
+    color: white; /* Cor do texto */
+}
+
+/* Área das respostas */
+.respostas {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    gap: 0.313rem; /* Define o espaçamento entre os itens */
+}
+
+/* Botões de resposta */
+.botao-resposta {
+    width: 100%; /* Define a largura como 100% do pai */
+    height: 2.5rem; /* Define a altura do botão */
+    text-align: start; /* Alinha o texto à esquerda */
+    padding: 0.313rem; /* Define o preenchimento interno */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Define o cursor como uma mão */
+    background: #D8302D; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+.botao-resposta:hover {
+    background: #6D85F1; /* Define a cor de fundo ao passar o mouse */
+    font-weight: 600; /* Define o peso da fonte como 600 (negrito) */
+}
+
+/* Tela de fim do jogo */
+.fim {
+    display: none; /* Oculta a tela de fim de jogo inicialmente */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 0.625rem; /* Define o espaçamento entre os itens */
+}
+
+.fim span {
+    margin-bottom: 2rem; /* Define a margem inferior */
+    text-align: center; /* Centraliza o texto */
+    font-weight: 600; /* Define o peso da fonte como 600 (negrito) */
+    color: white; /* Cor do texto */
+}
+
+/* Função de Jogar Novamente */
+#jogarNovamente {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 0.625rem 1.25rem; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+#jogarNovamente:hover {
+    background-color: #3e8e41; /* Cor de fundo ao passar o mouse */
+}
